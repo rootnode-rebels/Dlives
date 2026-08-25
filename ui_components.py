@@ -708,15 +708,15 @@ class ContainerFrame(QFrame):
         else:
             outer_bezel = QLinearGradient(0.0, 0.0, 0.0, h)
             if is_dark:
-                outer_bezel.setColorAt(0.0, QColor(255, 255, 255, 85))  # Refined grazing light crest
-                outer_bezel.setColorAt(0.15, QColor(255, 255, 255, 40))
-                outer_bezel.setColorAt(0.60, QColor(255, 255, 255, 18))
-                outer_bezel.setColorAt(1.0, QColor(0, 0, 0, 75))        # Grounded rim at bottom
+                outer_bezel.setColorAt(0.0, QColor(255, 255, 255, 90))  # Refined grazing light crest
+                outer_bezel.setColorAt(0.15, QColor(255, 255, 255, 45))
+                outer_bezel.setColorAt(0.60, QColor(255, 255, 255, 25))
+                outer_bezel.setColorAt(1.0, QColor(255, 255, 255, 30))  # Visible, grounded rim at bottom
             else:
                 outer_bezel.setColorAt(0.0, QColor(255, 255, 255, 240))
                 outer_bezel.setColorAt(0.20, QColor(255, 255, 255, 160))
-                outer_bezel.setColorAt(0.70, QColor(0, 0, 0, 25))
-                outer_bezel.setColorAt(1.0, QColor(0, 0, 0, 55))
+                outer_bezel.setColorAt(0.70, QColor(0, 0, 0, 35))
+                outer_bezel.setColorAt(1.0, QColor(0, 0, 0, 60))
             border_brush = QBrush(outer_bezel)
 
         pen = QPen(border_brush, 1.0)
@@ -881,21 +881,21 @@ class GlassPanel(QFrame):
         # ----------------------------------------------------
         # PASS 5: Physical Fresnel Double-Layer Glass Bezel
         # ----------------------------------------------------
-        # 5A: Outer Light Bezel (Razor-sharp top crest highlight + soft base shadow)
+        # 5A: Outer Light Bezel (Razor-sharp top crest highlight + crisp bottom rim)
         outer_bezel = QLinearGradient(0.0, 0.0, 0.0, h)
         if is_dark:
-            top_border_alpha = 80 if self.is_hovered else 60
-            bot_border_alpha = 25 if self.is_hovered else 15
+            top_border_alpha = 85 if self.is_hovered else 65
+            bot_border_alpha = 35 if self.is_hovered else 25
             outer_bezel.setColorAt(0.0, QColor(255, 255, 255, top_border_alpha))
             outer_bezel.setColorAt(0.15, QColor(255, 255, 255, int(top_border_alpha * 0.65)))
-            outer_bezel.setColorAt(0.6, QColor(255, 255, 255, 18))
-            outer_bezel.setColorAt(1.0, QColor(0, 0, 0, bot_border_alpha))
+            outer_bezel.setColorAt(0.6, QColor(255, 255, 255, 22))
+            outer_bezel.setColorAt(1.0, QColor(255, 255, 255, bot_border_alpha))
         else:
             top_border_alpha = 255 if self.is_hovered else 245
-            bot_border_alpha = 70 if self.is_hovered else 50
+            bot_border_alpha = 80 if self.is_hovered else 60
             outer_bezel.setColorAt(0.0, QColor(255, 255, 255, top_border_alpha))
             outer_bezel.setColorAt(0.2, QColor(255, 255, 255, 185))
-            outer_bezel.setColorAt(0.7, QColor(0, 0, 0, 25))
+            outer_bezel.setColorAt(0.7, QColor(0, 0, 0, 30))
             outer_bezel.setColorAt(1.0, QColor(0, 0, 0, bot_border_alpha))
 
         pen_outer = QPen(QBrush(outer_bezel), 1.0)
@@ -1284,10 +1284,11 @@ def get_lineedit_qss(accent: str, mode: str = "dark") -> str:
         }}
     """
 
-def flash_copy_feedback(btn: QPushButton, text: str):
-    """Copies text to clipboard and flashes button with a crisp green '✓ Copied!' badge for 1200ms."""
+def flash_copy_feedback(btn: QPushButton, text: str = None):
+    """Copies text to clipboard if provided and flashes button with a crisp green '✓ Copied!' badge for 1200ms."""
     try:
-        QApplication.clipboard().setText(text)
+        if text is not None:
+            QApplication.clipboard().setText(text)
         orig_text = btn.text()
         orig_style = btn.styleSheet()
         btn.setText("✓ Copied!")
@@ -3923,13 +3924,18 @@ class ClipboardShelfTabWidget(QWidget):
         copy_btn.setStyleSheet(f"QPushButton {{ background: {pal['input_bg']}; color: {pal['text_primary']}; border-radius: 4px; font-size: 9.5px; padding: 0 6px; }} QPushButton:hover {{ background: {accent}; color: #ffffff; }}")
 
         def copy_shelf_file(btn_obj, fp):
-            clipboard = QApplication.clipboard()
-            mime = QMimeData()
-            if os.path.exists(fp):
-                mime.setUrls([QUrl.fromLocalFile(fp)])
-            mime.setText(fp)
-            clipboard.setMimeData(mime)
-            flash_copy_feedback(btn_obj, "Copied!")
+            try:
+                clipboard = QApplication.clipboard()
+                mime = QMimeData()
+                if os.path.exists(fp):
+                    mime.setUrls([QUrl.fromLocalFile(fp)])
+                    mime.setText(fp)
+                    clipboard.setMimeData(mime)
+                else:
+                    clipboard.setText(fp)
+                flash_copy_feedback(btn_obj, None)
+            except Exception as copy_err:
+                print(f"[Copy Shelf File Error]: {copy_err}")
 
         copy_btn.clicked.connect(lambda _, b=copy_btn, p=f_path: copy_shelf_file(b, p))
 
