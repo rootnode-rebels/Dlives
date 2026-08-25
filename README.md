@@ -4,7 +4,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/your-username/dlives)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6.svg)](https://github.com/your-username/dlives)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 [![Company](https://img.shields.io/badge/publisher-Fugentech-6366f1.svg)](https://fugentech.com)
 
 ---
