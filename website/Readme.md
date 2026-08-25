@@ -61,13 +61,10 @@ Right-click `website/index.html` → **"Open with Live Server"**.
 
 
 
-## 🔗 Official GitHub Release Download URL
+## 🔗 Official Direct Installer Download URL
 
-All download buttons in the website link directly to the official GitHub Release:
-👉 [**https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0**](https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0)
-
-Direct installer executable name on GitHub Releases:
-`DLives_Setup_v1.0.exe`
+All download buttons in the website link directly to download the `.exe` installer:
+👉 [**Download Dlives_Setup.exe**](https://github.com/rootnode-rebels/Dlives/releases/download/v1.0.0/Dlives_Setup.exe)
 
 ---
 
