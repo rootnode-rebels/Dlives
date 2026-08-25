@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started — DLives Documentation</title>
+  <meta name="description" content="Step-by-step guide to installing, configuring, and getting started with DLives on Windows 10/11." />
+  <link rel="icon" href="../assets/app-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/docs.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" id="nav-logo-link">
+        <img src="../assets/app-icon.png" alt="DLives logo" class="nav-logo-img" />
+        <span class="nav-logo-text">DLives</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#features" class="nav-link">Features</a>
+        <a href="../index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="../index.html#requirements" class="nav-link">Requirements</a>
+        <a href="getting-started.html" class="nav-link active">Docs</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="support.html" class="nav-link">Support</a>
+      </div>
+      <a href="https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta" id="nav-download-btn">
+        ⬇ Download
+      </a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="../index.html#features" class="nav-mobile-link">Features</a>
+      <a href="../index.html#how-it-works" class="nav-mobile-link">How It Works</a>
+      <a href="../index.html#requirements" class="nav-mobile-link">Requirements</a>
+      <a href="getting-started.html" class="nav-mobile-link">Docs</a>
+      <a href="features.html" class="nav-mobile-link">Features Guide</a>
+      <a href="faq.html" class="nav-mobile-link">FAQ</a>
+      <a href="support.html" class="nav-mobile-link">Support</a>
+      <a href="https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" class="btn btn-primary">⬇ Download for Windows</a>
+    </div>
+  </nav>
+
+  <!-- DOCS LAYOUT -->
+  <div class="docs-layout">
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Getting Started</div>
+        <a href="getting-started.html" class="sidebar-link active">Installation & Setup</a>
+        <a href="getting-started.html#smartscreen" class="sidebar-link">SmartScreen Guidance</a>
+        <a href="getting-started.html#first-launch" class="sidebar-link">First Launch & Tour</a>
+        <a href="getting-started.html#permissions" class="sidebar-link">Permissions Setup</a>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Manual & Reference</div>
+        <a href="features.html" class="sidebar-link">Detailed Features Guide</a>
+        <a href="faq.html" class="sidebar-link">Frequently Asked Questions</a>
+        <a href="support.html" class="sidebar-link">Support & Bug Reports</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-content docs-prose">
+      <header class="docs-header">
+        <span class="docs-page-label">Documentation</span>
+        <h1 class="docs-page-title">Getting Started with DLives</h1>
+        <p class="docs-page-sub">Follow this quick guide to install, launch, and configure DLives on your Windows 10 or 11 desktop.</p>
+      </header>
+
+      <h2>System Prerequisites</h2>
+      <p>Before installing, ensure your PC meets the minimum system requirements:</p>
+      <ul>
+        <li><strong>Operating System:</strong> Windows 10 (version 1903 or newer) or Windows 11 (64-bit).</li>
+        <li><strong>Hardware:</strong> 100 MB available RAM, ~75 MB free storage space.</li>
+        <li><strong>Permissions:</strong> Standard user account (Administrator privileges are <em>not</em> required).</li>
+        <li><strong>Runtimes:</strong> None needed. DLives is fully self-contained.</li>
+      </ul>
+
+      <h2>Step 1: Download & Run Installer</h2>
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Download the Installer</h4>
+            <p>Download the latest setup executable (<code>DLives_Setup_v1.0.exe</code>) from the official <a href="https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">GitHub Releases page</a>.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Run the Setup Wizard</h4>
+            <p>Double-click the installer. It installs per-user into <code>%LocalAppData%\Programs\DLives\</code> without prompting for Windows UAC administrator elevation.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="smartscreen">Step 2: Windows SmartScreen Notice</h2>
+      <div class="docs-alert docs-alert-warning">
+        <div class="docs-alert-icon">🛡️</div>
+        <div class="docs-alert-body">
+          <strong>Why does Windows show a blue warning?</strong>
+          Because DLives is an indie project developed by Fugentech and the binary is not signed with an expensive commercial EV certificate, Microsoft Defender SmartScreen may display: <em>"Windows protected your PC — Microsoft Defender SmartScreen prevented an unrecognized app from starting."</em>
+        </div>
+      </div>
+      <p>To continue the standard installation:</p>
+      <ol>
+        <li>Click <strong>"More info"</strong> directly under the alert text.</li>
+        <li>Click the <strong>"Run anyway"</strong> button that appears in the bottom right corner.</li>
+        <li>The installer will immediately launch. You only have to do this once.</li>
+      </ol>
+
+      <h2 id="first-launch">Step 3: First Launch & Basic Usage</h2>
+      <p>Upon launching DLives:</p>
+      <ul>
+        <li><strong>Floating Pill:</strong> A compact glass pill will dock at the top (or bottom) edge of your primary display.</li>
+        <li><strong>Hover to Expand:</strong> Move your mouse pointer over the pill. It will expand smoothly with an animated Liquid Glass transition into the multi-tab productivity dashboard.</li>
+        <li><strong>System Tray Icon:</strong> Look for the blue DLives icon in your Windows Taskbar notification area (tray). Right-click it at any time to toggle the island, open Settings, or exit.</li>
+        <li><strong>Lock Triggering:</strong> Toggling <code>Caps Lock</code> or <code>Num Lock</code> will pulse the island badges and briefly surface status alerts.</li>
+      </ul>
+
+      <h2 id="permissions">Step 4: Permissions & Notification Stream</h2>
+      <p>For DLives to display live notification banners and stream recent messages into the <strong>Notifs</strong> tab:</p>
+      <div class="docs-alert docs-alert-info">
+        <div class="docs-alert-icon">🔔</div>
+        <div class="docs-alert-body">
+          <strong>Enabling Windows Notification Listener</strong>
+          Windows 10/11 may prompt to allow DLives access to your notifications. Click <strong>Allow</strong>. If you previously denied this or notifications do not appear:
+          <br />
+          Open Windows <strong>Settings → System → Notifications</strong> and ensure app notifications are enabled.
+        </div>
+      </div>
+
+      <h2>Data Storage & Privacy</h2>
+      <p>All your user settings, notes, alarms, and calendar entries remain 100% offline on your device:</p>
+      <pre><code>User Data Root: %AppData%\DLives\
+├── settings.json       # Visual & behavior configurations
+├── alarms.json         # Configured alarm triggers
+├── calendar.json       # Date-bound calendar events
+├── clipboard.json      # Captured clipboard items
+├── timetable.json      # Recurring daily timetables
+└── notes\              # Plain text (.txt) files readable directly in File Explorer</code></pre>
+
+      <div class="docs-alert docs-alert-success">
+        <div class="docs-alert-icon">💡</div>
+        <div class="docs-alert-body">
+          <strong>Need Help?</strong>
+          If you encounter any issues during setup, check our <a href="faq.html">FAQ</a> or email us directly at <a href="mailto:suhashoskere@gmail.com">suhashoskere@gmail.com</a>.
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Fugentech. All rights reserved.</p>
+        <p class="footer-tech"><a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
