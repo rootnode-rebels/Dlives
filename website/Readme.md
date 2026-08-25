@@ -61,17 +61,13 @@ Right-click `website/index.html` → **"Open with Live Server"**.
 
 
 
-## 🔗 Plugging In Your Real Download URL
+## 🔗 Official GitHub Release Download URL
 
-The `.exe` installer is large (~65 MB) and should be hosted on a CDN or **GitHub Releases** rather than directly bundled into static site web hosting.
+All download buttons in the website link directly to the official GitHub Release:
+👉 [**https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0**](https://github.com/rootnode-rebels/Dlives/releases/tag/v1.0.0)
 
-When you release `SanLives_Setup_v1.0.exe` on GitHub Releases or your hosting bucket:
-1. Search for `#DOWNLOAD_URL_PLACEHOLDER` across all `.html` files (`index.html`, `docs/*.html`).
-2. Replace `#DOWNLOAD_URL_PLACEHOLDER` with your direct download link:
-   ```html
-   <!-- Example: -->
-   <a href="https://github.com/your-username/sanlives/releases/download/v1.0/SanLives_Setup_v1.0.exe" class="btn btn-primary">
-   ```
+Direct installer executable name on GitHub Releases:
+`DLives_Setup_v1.0.exe`
 
 ---
 
