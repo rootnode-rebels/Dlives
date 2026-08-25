@@ -1,0 +1,9 @@
+*.py
+requirements.txt
+DLives.spec
+installer.iss
+installer.py
+file_version_info.txt
+installer_version_info.txt
+sanlives-android/
+assets/
