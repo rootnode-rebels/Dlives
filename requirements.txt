@@ -1,0 +1,8 @@
+PyQt6
+psutil
+pycaw
+comtypes
+screen-brightness-control
+winmedia-controller
+pynput
+pyinstaller
