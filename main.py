@@ -20,7 +20,7 @@ def uncaught_exception_handler(exctype, value, tb):
 
 sys.excepthook = uncaught_exception_handler
 
-from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QPropertyAnimation, QEasingCurve, QSize, QThread, pyqtProperty, QObject, QUrl, QFileSystemWatcher
+from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QPropertyAnimation, QEasingCurve, QSize, QThread, pyqtProperty, QObject, QUrl, QFileSystemWatcher, QPoint, QPointF, QRect, QRectF
 from PyQt6.QtGui import QColor, QFont, QIcon, QPixmap, QPainter, QPainterPath, QPen, QBrush, QCursor, QAction, QImage
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel,
@@ -327,7 +327,7 @@ class DynamicIsland(QWidget):
         self.collapsed_width = 380
         self.collapsed_height = 36
         self.expanded_width = 588
-        self.expanded_height = 350
+        self.expanded_height = 370
         self.margin = 22
 
         self.current_frame_width = self.collapsed_width
@@ -495,7 +495,7 @@ class DynamicIsland(QWidget):
         self.dashboard_widget = QWidget(self.container_frame)
         self.dashboard_widget.setFixedSize(self.expanded_width, self.expanded_height)
         dashboard_layout = QVBoxLayout(self.dashboard_widget)
-        dashboard_layout.setContentsMargins(6, 4, 6, 4)
+        dashboard_layout.setContentsMargins(6, 4, 6, 8)
         dashboard_layout.setSpacing(4)
 
         # Quick Header Bar
