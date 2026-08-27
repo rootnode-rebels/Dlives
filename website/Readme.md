@@ -61,10 +61,18 @@ Right-click `website/index.html` → **"Open with Live Server"**.
 
 
 
+
+
 ## 🔗 Official Direct Installer Download URL
 
 All download buttons in the website link directly to download the `.exe` installer:
 👉 [**Download Dlives_Setup.exe**](https://github.com/rootnode-rebels/Dlives/releases/download/v1.0.0/Dlives_Setup.exe)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the root [LICENSE](../LICENSE) for details.
 
 ---
 
