@@ -1,0 +1,47 @@
+# Python cache & build outputs
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec.bak
+build/
+dist/
+dist_app/
+installer_dist/
+*.log
+
+# Android & Java build outputs
+.gradle/
+.kotlin/
+*.hprof
+local.properties
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Personal local runtime files & data
+alarms.json
+apps.json
+calendar.json
+clipboard.json
+custom_sounds.json
+fileshelf.json
+notes_index.json
+settings.json
+timetable.json
+notes/
+
+# Executables & installers (upload to GitHub Releases instead)
+*.exe
+*.apk
+
+# IDE & OS temporary files
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+scratch/
+
+# Local database runtime files
+*.sqlite

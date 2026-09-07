@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dlives — Dynamic Island for Windows 10 &amp; 11</title>
+  <meta name="description"
+    content="Dlives is a minimal liquid glass dynamic island for Windows 10 and 11. Now available on the Microsoft Store." />
+  <meta name="keywords" content="Dlives, Dynamic Island Windows, Windows 11 Dynamic Island, Desktop Widget" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Dlives — Your Windows Desktop, Alive." />
+  <meta property="og:description" content="A fluid liquid glass dynamic island for Windows 10 &amp; 11. Get it on the Microsoft Store." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apps.microsoft.com/detail/9P2XZRF8RLB2" />
+
+  <link rel="icon" href="assets/app-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CLEAN MINIMAL NAVBAR
+  ============================================================ -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/app-icon.png" alt="Dlives" class="nav-logo-img" />
+        <span class="nav-logo-text">Dlives</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#screenshots" class="nav-link">Screenshots</a>
+        <a href="https://github.com/rootnode-rebels/Dlives" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+        <a href="docs/support.html" class="nav-link">Support</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+          target="_blank" rel="noopener noreferrer"
+          class="btn btn-ms-store ms-store-trigger">
+          <div class="btn-icon-ms">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          Get on Microsoft Store
+        </a>
+        <a href="https://github.com/rootnode-rebels/Dlives/releases/download/v1.0.0/Dlives_Setup.exe"
+          target="_blank" rel="noopener noreferrer"
+          class="btn btn-ghost" title="Direct Installer">
+          ⬇ .exe
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#features" class="nav-mobile-link">Features</a>
+      <a href="#screenshots" class="nav-mobile-link">Screenshots</a>
+      <a href="https://github.com/rootnode-rebels/Dlives" target="_blank" rel="noopener noreferrer" class="nav-mobile-link">GitHub</a>
+      <a href="docs/getting-started.html" class="nav-mobile-link">Docs</a>
+      <a href="docs/support.html" class="nav-mobile-link">Support</a>
+      <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+        target="_blank" rel="noopener noreferrer" class="btn btn-ms-store ms-store-trigger" style="margin-top: 12px; width: 100%;">
+        <div class="btn-icon-ms">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        Get on Microsoft Store
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         CLEAN HERO (ASYMMETRICAL 2-COLUMN)
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+
+      <div class="container hero-container">
+        <div class="hero-split-grid">
+          
+          <!-- Left: Copy & Actions -->
+          <div class="hero-left-col">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>Live on Microsoft Store · Windows 10 &amp; 11</span>
+            </div>
+
+            <h1 class="hero-title">
+              Your Windows Desktop,<br />
+              <span class="accent-gradient">Alive.</span>
+            </h1>
+
+            <p class="hero-sub">
+              A minimalist dynamic island inspired by fluid liquid glass. Hover the top of your screen to reveal media controls with tap-to-seek, notes, alarms, calendar, and low-latency system diagnostics.
+            </p>
+
+            <div class="hero-actions">
+              <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+                target="_blank" rel="noopener noreferrer"
+                class="btn btn-ms-store btn-lg ms-store-trigger" id="hero-ms-btn">
+                <div class="btn-icon-ms">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                Get on Microsoft Store
+              </a>
+
+              <a href="https://github.com/rootnode-rebels/Dlives/releases/download/v1.0.0/Dlives_Setup.exe"
+                target="_blank" rel="noopener noreferrer"
+                class="btn btn-ghost btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Direct (.exe)
+              </a>
+
+              <a href="https://github.com/rootnode-rebels/Dlives" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+            </div>
+
+            <div class="hero-specs-row">
+              <span class="spec-pill">✓ Free &amp; Open Source</span>
+              <span class="spec-pill">🛡️ Zero Telemetry</span>
+              <span class="spec-pill">⚡ &lt;0.1% CPU</span>
+              <span class="spec-pill">⌨️ F10 Hotkey</span>
+            </div>
+          </div>
+
+                    <!-- Right: Authentic Dlives Bar docked at top edge of Screen Mockup -->
+          <div class="hero-right-col">
+            <div class="desktop-screen-mockup glass-card">
+              
+              <!-- Screen Top Edge with Docked Real Dlives Bar -->
+              <div class="screen-top-edge">
+                <div class="dlives-real-bar" id="dlives-real-bar" title="Hover or click to switch workspace tabs">
+                  <div class="bar-left">
+                    <div class="bar-logo">
+                      <img src="assets/app-icon.png" alt="Dlives" />
+                    </div>
+                    <div class="bar-datetime">
+                      <span class="bar-clock" id="bar-live-clock">19:26:02</span>
+                      <span class="bar-date" id="bar-live-date">Mon, Sep 07</span>
+                    </div>
+                  </div>
+
+                  <div class="bar-center">
+                    <span class="bar-key-chip" id="bar-caps">CAPS</span>
+                    <span class="bar-key-chip active" id="bar-num">NUM</span>
+                  </div>
+
+                  <div class="bar-right">
+                    <div class="bar-badge-chip">
+                      <span class="bar-bolt">⚡</span>
+                      <span id="bar-battery">42%</span>
+                    </div>
+                    <button class="bar-icon-btn" id="bar-mute-toggle" aria-label="Audio toggle" title="Volume Toggle">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Expanded Liquid Glass Workspace Frame directly below -->
+              <div class="screen-workspace-frame">
+                <div class="preview-titlebar">
+                  <div class="preview-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-title" id="preview-active-title">Home Dashboard</div>
+                  <div class="preview-tag">Hover to Expand · 130ms</div>
+                </div>
+
+                <div class="preview-img-box">
+                  <img src="assets/screenshots/home-tab.png" alt="Dlives Preview" id="hero-preview-img" />
+                </div>
+
+                <div class="preview-nav-pills">
+                  <button class="pill-tab-btn active" data-tab="home">🏠 Home</button>
+                  <button class="pill-tab-btn" data-tab="media">🎵 Media</button>
+                  <button class="pill-tab-btn" data-tab="system">⚡ Sys</button>
+                  <button class="pill-tab-btn" data-tab="shelf">📋 Shelf</button>
+                  <button class="pill-tab-btn" data-tab="calendar">📅 Calendar</button>
+                  <button class="pill-tab-btn" data-tab="alarms">⏰ Alarms</button>
+                  <button class="pill-tab-btn" data-tab="notes">📝 Notes</button>
+                  <button class="pill-tab-btn" data-tab="settings">⚙️ Settings</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4 CORE FEATURES (CLEAN & MINIMAL)
+    ============================================================ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Minimal &amp; Powerful</span>
+          <h2 class="section-title">Everything You Need. Right at the Top.</h2>
+          <p class="section-sub">
+            Zero desktop clutter. All your everyday productivity tools packed inside one discreet floating capsule.
+          </p>
+        </div>
+
+        <div class="features-grid-clean">
+          <!-- Card 1 -->
+          <div class="glass-card feature-card-clean">
+            <div class="feature-icon-circle">🏝️</div>
+            <h3 class="feature-heading">Fluid Dynamic Island</h3>
+            <p class="feature-text">
+              Rests unobtrusively at the top of your screen. Expands in 130ms on hover or via <kbd>F10</kbd>. Move anywhere with right-click drag or minimize to taskbar.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card feature-card-clean">
+            <div class="feature-icon-circle">🎵</div>
+            <h3 class="feature-heading">Media &amp; Tap-to-Seek</h3>
+            <p class="feature-text">
+              Direct mouse seeking on Spotify, Apple Music, and Chrome. Accidental keyboard arrow-keys and mouse-wheel hijacks are locked out.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card feature-card-clean">
+            <div class="feature-icon-circle">📝</div>
+            <h3 class="feature-heading">Notes with Disk Sync</h3>
+            <p class="feature-text">
+              Instant scratchpad that automatically saves plain Markdown files directly to your local PC storage with zero accounts or cloud tracking.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card feature-card-clean">
+            <div class="feature-icon-circle">⚡</div>
+            <h3 class="feature-heading">Low-Latency Telemetry</h3>
+            <p class="feature-text">
+              Real-time monitoring of CPU load, RAM allocation, battery charge rate, audio visualizer, and storage with &lt;0.1% CPU overhead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCREENSHOTS GALLERY (MINIMAL GRID)
+    ============================================================ -->
+    <section class="section section-dark" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Visual Tour</span>
+          <h2 class="section-title">Liquid Glass Workspaces</h2>
+          <p class="section-sub">Captured natively on Windows 11 in pure dark mode.</p>
+        </div>
+
+        <div class="gallery-clean-grid">
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/home-tab.png" data-title="Home Dashboard">
+            <img src="assets/screenshots/home-tab.png" alt="Home Dashboard" loading="lazy" />
+            <div class="gallery-item-title">Home Dashboard</div>
+          </div>
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/control-media.png" data-title="Media Player">
+            <img src="assets/screenshots/control-media.png" alt="Media Player" loading="lazy" />
+            <div class="gallery-item-title">Media &amp; Tap-to-Seek</div>
+          </div>
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/system-diagnostics.png" data-title="System Diagnostics">
+            <img src="assets/screenshots/system-diagnostics.png" alt="System Diagnostics" loading="lazy" />
+            <div class="gallery-item-title">System Telemetry</div>
+          </div>
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/clipboard-shelf.png" data-title="Clipboard &amp; Shelf">
+            <img src="assets/screenshots/clipboard-shelf.png" alt="Clipboard Shelf" loading="lazy" />
+            <div class="gallery-item-title">Clipboard &amp; File Shelf</div>
+          </div>
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/calendar.png" data-title="Calendar">
+            <img src="assets/screenshots/calendar.png" alt="Calendar" loading="lazy" />
+            <div class="gallery-item-title">Calendar &amp; Events</div>
+          </div>
+          <div class="gallery-item-clean glass-card" data-src="assets/screenshots/alarms.png" data-title="Alarms &amp; Schedule">
+            <img src="assets/screenshots/alarms.png" alt="Alarms" loading="lazy" />
+            <div class="gallery-item-title">Alarms &amp; Timetable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Screenshots -->
+    <div class="lightbox-modal" id="lightbox-modal">
+      <div class="lightbox-overlay" id="lightbox-overlay"></div>
+      <div class="lightbox-content glass-card">
+        <button class="lightbox-close" id="lightbox-close">✕</button>
+        <div class="lightbox-header" id="lightbox-title">Screenshot Preview</div>
+        <div class="lightbox-img-wrap">
+          <img src="" alt="Dlives Preview" id="lightbox-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         MICROSOFT STORE & GETTING STARTED
+    ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box-clean glass-card">
+          <span class="hero-badge-dot"></span>
+          <h2 class="section-title" style="margin: 16px 0 12px;">Get Dlives on Windows 10 &amp; 11</h2>
+          <p class="section-sub" style="margin-bottom: 28px;">
+            1-click install from the Microsoft Store with seamless automatic updates, or grab the direct installer.
+          </p>
+          <div class="hero-actions" style="justify-content: center;">
+            <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-ms-store btn-lg ms-store-trigger">
+              <div class="btn-icon-ms">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              Install from Microsoft Store
+            </a>
+            <a href="https://github.com/rootnode-rebels/Dlives/releases/download/v1.0.0/Dlives_Setup.exe"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-ghost btn-lg">
+              ⬇ Download .exe
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       MINIMAL FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-clean-inner">
+      <div class="footer-left">
+        <img src="assets/app-icon.png" alt="Dlives" style="width: 24px; height: 24px; border-radius: 6px;" />
+        <span>Dlives © 2026 Fugentech · Open Source (MIT)</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare" target="_blank" rel="noopener noreferrer">Store</a>
+        <a href="https://github.com/rootnode-rebels/Dlives" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="docs/privacy.html">Privacy</a>
+        <a href="docs/support.html">Support</a>
+        <a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

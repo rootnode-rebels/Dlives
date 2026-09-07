@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Dlives Windows Dynamic Island</title>
+  <meta name="description" content="Privacy Policy for Dlives — 100% offline, zero data collection, no telemetry or third-party tracking." />
+  <link rel="icon" href="../assets/app-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/docs.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" id="nav-logo-link">
+        <img src="../assets/app-icon.png" alt="Dlives logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Dlives</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#features" class="nav-link">Features</a>
+        <a href="../index.html#tabs" class="nav-link">Tabs</a>
+        <a href="../index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="getting-started.html" class="nav-link">Docs</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="privacy.html" class="nav-link active">Privacy</a>
+        <a href="support.html" class="nav-link">Support</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+          target="_blank" rel="noopener noreferrer" class="btn btn-ms-store ms-store-trigger">
+          <div class="btn-icon-ms">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          Microsoft Store
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="../index.html#features" class="nav-mobile-link">Features</a>
+      <a href="getting-started.html" class="nav-mobile-link">Getting Started</a>
+      <a href="features.html" class="nav-mobile-link">Features Guide</a>
+      <a href="faq.html" class="nav-mobile-link">FAQ</a>
+      <a href="privacy.html" class="nav-mobile-link">Privacy Policy</a>
+      <a href="support.html" class="nav-mobile-link">Support & Contact</a>
+      <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+        target="_blank" rel="noopener noreferrer" class="btn btn-ms-store ms-store-trigger" style="margin-top: 12px; width: 100%;">
+        Get on Microsoft Store
+      </a>
+    </div>
+  </nav>
+
+  <!-- DOCS LAYOUT -->
+  <div class="docs-layout">
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Legal & Privacy</div>
+        <a href="#data-collection" class="sidebar-link active">Zero Data Collection</a>
+        <a href="#local-storage" class="sidebar-link">Local Storage Architecture</a>
+        <a href="#permissions" class="sidebar-link">System Permissions</a>
+        <a href="#ms-store-policy" class="sidebar-link">Microsoft Store Compliance</a>
+        <a href="#contact" class="sidebar-link">Privacy Inquiries</a>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Manual & Reference</div>
+        <a href="getting-started.html" class="sidebar-link">Getting Started</a>
+        <a href="features.html" class="sidebar-link">Features Guide</a>
+        <a href="faq.html" class="sidebar-link">Frequently Asked Questions</a>
+        <a href="support.html" class="sidebar-link">Support & Developer Contact</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-content docs-prose">
+      <header class="docs-header">
+        <span class="docs-page-label">Legal & Transparency</span>
+        <h1 class="docs-page-title">Privacy Policy for Dlives</h1>
+        <p class="docs-page-sub">Effective Date: September 2026 · Fugentech</p>
+      </header>
+
+      <div class="glass-card" style="padding: 24px; border-left: 4px solid var(--success); margin-bottom: 32px;">
+        <strong style="color: var(--success); font-size: 1.05rem;">Privacy by Architecture:</strong><br />
+        Dlives operates 100% offline. We do not collect, transmit, monetize, or store any personal data on external servers. There is no remote backend, zero telemetry, and zero third-party analytics.
+      </div>
+
+      <h2 id="data-collection">1. Data Collection & Telemetry</h2>
+      <p>Dlives does not collect or transmit any telemetry, diagnostics, keystrokes, personal identifiers, or behavioral data. All operations happen exclusively in memory and within local user configuration files.</p>
+
+      <h2 id="local-storage">2. Local Device Storage</h2>
+      <p>All data created or modified in Dlives — including alarms, timetable entries, notes, calendar schedules, custom preferences, and shelf items — is stored strictly on your local PC in <code>%APPDATA%\Dlives\</code>. This data never leaves your computer.</p>
+
+      <h2 id="permissions">3. System Permissions & Usage</h2>
+      <p>Dlives utilizes standard Windows APIs for the following desktop features:</p>
+      <ul>
+        <li><strong>Windows Notification Listener:</strong> Used to display in-app toast summaries and priority popups. All notification contents are processed locally in real time and automatically auto-pruned daily.</li>
+        <li><strong>Media Session API (WinRT):</strong> Used to show currently playing tracks (song title, artist, seek position) and provide transport controls (play/pause/seek) for Spotify, Chrome, or Windows Media Player.</li>
+        <li><strong>System Audio & Display APIs:</strong> Used solely to adjust system master volume and screen brightness from the Control Center card.</li>
+      </ul>
+
+      <h2 id="ms-store-policy">4. Microsoft Store Certified</h2>
+      <p>Dlives complies strictly with Microsoft Store App Developer Agreement and privacy standards, ensuring verified sandboxed execution, seamless updates, and clean uninstallation without residual system bloat.</p>
+
+      <h2 id="contact">5. Contact & Privacy Officer</h2>
+      <p>If you have any questions or feedback regarding privacy or security in Dlives, contact the developer directly:</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a><br />
+        <strong>Developer:</strong> Fugentech
+      </p>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Fugentech. All rights reserved.</p>
+        <p>Support & Privacy: <a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

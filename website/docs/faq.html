@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently Asked Questions — Dlives Windows Dynamic Island</title>
+  <meta name="description" content="Common questions and troubleshooting answers for Dlives Windows dynamic island application." />
+  <link rel="icon" href="../assets/app-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/docs.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/app-icon.png" alt="Dlives logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Dlives</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#features" class="nav-link">Features</a>
+        <a href="../index.html#tabs" class="nav-link">Tabs</a>
+        <a href="../index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="getting-started.html" class="nav-link">Docs</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="support.html" class="nav-link">Support</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+          target="_blank" rel="noopener noreferrer" class="btn btn-ms-store ms-store-trigger">
+          <div class="btn-icon-ms">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          Microsoft Store
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="../index.html#features" class="nav-mobile-link">Features</a>
+      <a href="getting-started.html" class="nav-mobile-link">Getting Started</a>
+      <a href="features.html" class="nav-mobile-link">Features Guide</a>
+      <a href="faq.html" class="nav-mobile-link">FAQ</a>
+      <a href="privacy.html" class="nav-mobile-link">Privacy Policy</a>
+      <a href="support.html" class="nav-mobile-link">Support & Contact</a>
+      <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare"
+        target="_blank" rel="noopener noreferrer" class="btn btn-ms-store ms-store-trigger" style="margin-top: 12px; width: 100%;">
+        Get on Microsoft Store
+      </a>
+    </div>
+  </nav>
+
+  <!-- DOCS LAYOUT -->
+  <div class="docs-layout">
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Navigation</div>
+        <a href="getting-started.html" class="sidebar-link">Getting Started</a>
+        <a href="features.html" class="sidebar-link">Features Guide</a>
+        <a href="faq.html" class="sidebar-link active">FAQ</a>
+        <a href="privacy.html" class="sidebar-link">Privacy Policy</a>
+        <a href="support.html" class="sidebar-link">Support & Developer Contact</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-content docs-prose">
+      <header class="docs-header">
+        <span class="docs-page-label">Knowledge Base</span>
+        <h1 class="docs-page-title">Frequently Asked Questions</h1>
+        <p class="docs-page-sub">Quick answers to common questions about Dlives installation, features, performance, and Microsoft Store integration.</p>
+      </header>
+
+      <div class="faq-list">
+        <!-- 1 -->
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span>How do I get Dlives for Windows?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can install Dlives directly with one click from the <a href="https://apps.microsoft.com/detail/9P2XZRF8RLB2?hl=en-us&gl=IN&ocid=pdpshare" target="_blank" rel="noopener noreferrer" class="accent-link">official Microsoft Store page</a>. Alternatively, a direct standalone installer executable is available on our GitHub Releases page.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Dlives free to use?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, Dlives is 100% free with no paywalls, subscriptions, or telemetry tracking.</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Dlives work on both Windows 10 and Windows 11?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! Dlives is fully optimized for 64-bit Windows 10 (Build 1903+) and Windows 11. It utilizes native Win32/DWM APIs for liquid acrylic glassmorphism, SMTC media transport, and taskbar integration.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does the global F10 hotkey and dragging work?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Pressing <kbd>F10</kbd> anywhere across Windows immediately toggles the island expanded state or brings it back to the screen. You can also right-click and drag anywhere on the capsule or header to reposition the island to any monitor coordinate, with automatic symmetrical centering.</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is my personal data and notes stored?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>All user data is stored locally in your user profile at <code>%AppData%\Dlives\</code>. Your notes, alarms, timetable tasks, and settings never leave your PC.</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I report a bug or suggest a new feature?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can reach the developer directly at <a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a> or submit ideas via our <a href="support.html" class="accent-link">Support & Feedback Form</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Fugentech. All rights reserved.</p>
+        <p>Support: <a href="mailto:suhashoskere@gmail.com" class="accent-link">suhashoskere@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
